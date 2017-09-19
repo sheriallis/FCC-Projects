@@ -3,9 +3,9 @@ const url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand";
 const request = function() {
   $.ajax({
     url: url,
-    type: "GET"
+    type: "GET",
+    cache: false
   }).done(function(data) {
-    console.log(data);
     $("blockquote").html(
       data[0].content + "<cite>— " + data[0].title + "</cite>"
     );
