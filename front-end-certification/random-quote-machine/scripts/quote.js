@@ -1,4 +1,4 @@
-const url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand";
+const url = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand";
 
 const request = function() {
   $.ajax({
