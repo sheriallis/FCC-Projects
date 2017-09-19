@@ -15,4 +15,4 @@ Fulfill the below user stories. Use whichever libraries or APIs you need. Give i
 
 ### Completed Project
 
-[View completed project]()
+[View completed project](https://codepen.io/sheri/full/mBVBaQ/)
