@@ -16,3 +16,7 @@ Fulfill the below user stories. Use whichever libraries or APIs you need. Give i
 ### Completed Project
 
 [View completed project](https://codepen.io/sheri/full/mBVBaQ/)
+
+![Preview of completed project](https://user-images.githubusercontent.com/1948858/30601394-22122432-9d62-11e7-9d58-def6dbfb40d4.png)
+
+
