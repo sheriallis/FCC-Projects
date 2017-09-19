@@ -5,18 +5,24 @@ body {
   font-size: 2.5rem;
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 #container {
   max-width: 90%;
+  min-width: 300px;
   margin: 0 auto;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+blockquote {
+  transition: all 0.5s ease-in-out;
 }
 
 button {
@@ -24,11 +30,25 @@ button {
   color: #f7f7f7;
   padding: 8px 16px;
   border: 1px solid #f7f7f7;
-  margin-right: 10px;
-  margin-top: 40px;
+  margin: 40px 0px 40px 10px;
+  font-size: 1rem;
 }
 
 button:hover {
   background: rgba(2, 2, 2, 0.6);
   transition: all 0.3s ease-in;
+}
+
+.tweet:hover {
+  background: rgba(3, 165, 230, 0.6);
+}
+
+@media(max-width: 600px) {
+  #container {
+    width: 100%;
+  }
+  button {
+    margin-top: 0 0 5px 10px;
+    width: 30%;
+  }
 }
