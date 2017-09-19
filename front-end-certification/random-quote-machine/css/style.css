@@ -1,5 +1,7 @@
 body {
   background-color: #28afb0;
+  background-image: url("/img/hypnotize-bg.png");
+  background-repeat: repeat;
   color: #f7f7f7;
   font-family: "Yantramanav", sans-serif;
   font-size: 2.5rem;
@@ -13,6 +15,8 @@ body {
   max-width: 90%;
   min-width: 300px;
   margin: 0 auto;
+  background-color: rgba(10, 66, 150, 0.8);
+  border-radius: 15px;
 }
 
 .buttons {
@@ -26,24 +30,30 @@ blockquote {
 }
 
 button {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   color: #f7f7f7;
   padding: 8px 16px;
   border: 1px solid #f7f7f7;
   margin: 40px 0px 40px 10px;
   font-size: 1rem;
+  border-radius: 5px;
 }
 
 button:hover {
-  background: rgba(2, 2, 2, 0.6);
-  transition: all 0.3s ease-in;
+  background: rgb(211, 4, 104);
+  transition: all 0.4s ease-in-out;
+}
+
+a {
+  color: #f7f7f7;
+  text-decoration: none;
 }
 
 .tweet:hover {
   background: rgba(3, 165, 230, 0.6);
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   #container {
     width: 100%;
   }
