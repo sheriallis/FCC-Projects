@@ -11,6 +11,7 @@ Fulfill the below user stories. Use whichever libraries or APIs you need. Give i
 
 ### Resources Used
 - [Quotes on Design API](https://quotesondesign.com/api-v4-0/)
+- [Background Pattern by Akash](https://www.toptal.com/designers/subtlepatterns/hypnotic/)
 
 ### Completed Project
 
