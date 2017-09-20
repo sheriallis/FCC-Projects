@@ -21,11 +21,7 @@ $(function() {
       navigator.geolocation.getCurrentPosition(success, error);
     },
     get: function(lat, lon) {
-      const url =
-        "https://fcc-weather-api.glitch.me/api/current?lon=" +
-        lon +
-        "&lat=" +
-        lat;
+      const url = `https://fcc-weather-api.glitch.me/api/current?lon=${lon}&lat=${lat}`;
 
       $.getJSON(url, function(data) {
         weather.print(data);
@@ -35,13 +31,24 @@ $(function() {
       const location = data.name + ", " + data.sys.country;
       const descr = data.weather[0].description;
       const icon = data.weather[0].icon;
-      let temp = Math.round(data.main.temp);
+      let cTemp = Math.round(data.main.temp);
+      let fTemp = Math.round(cTemp * 1.8 + 32);
+      let metric = "celsius";
 
-      $(".temp").html(temp);
       $(".location").html(location);
       $(".description").html(descr);
-      $(".temp").html(temp);
-      $(".icon").html('<img src="' + icon + '">');
+      $(".temp").html(`${cTemp} <span class="metric"> °C</span>`);
+      $(".icon").html(`<img src="${icon}">`);
+
+      $(".temp").on("click", ".metric", function() {
+        if (metric === "celsius") {
+          $(".temp").html(`${fTemp} <span class="metric"> °F</span>`);
+          metric = "fahrenheit";
+        } else {
+          $(".temp").html(`${cTemp} <span class="metric"> °C</span>`);
+          metric = "celsius";
+        }
+      });
     }
   };
   weather.getLocation();

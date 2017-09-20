@@ -46,3 +46,12 @@ body {
   font-size: 1.5rem;
   color: #606060;
 }
+
+.metric {
+  color: #f78ca0;
+}
+
+.metric:hover {
+  color: #FFC13A;
+  border-bottom: 4px solid #FFC13A;
+}
