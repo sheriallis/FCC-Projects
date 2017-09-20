@@ -22,6 +22,7 @@ Fulfill the below user stories. Use whichever libraries or APIs you need. Give i
 - [Fog: Photo by Urša Rogelj on Unsplash](https://unsplash.com/search/photos/fog?photo=6uzUmm34FiE)
 - [Cloudy: Photo by Artem Anokhin on Unsplash](https://unsplash.com/search/photos/cloudy?photo=V4qjYCac7y8)
 - [Clear: Photo by Adnanta Raharja on Unsplash](https://unsplash.com/search/photos/sunny?photo=StJRQbsWtQA)
+- [Default image: Photo by Nitish Meena](https://unsplash.com/photos/RbbdzZBKRDY)
 
 ### Completed Project
 [View completed project](https://codepen.io/sheri/full/qPNWej/)
