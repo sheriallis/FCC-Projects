@@ -26,3 +26,6 @@ Fulfill the below user stories. Use whichever libraries or APIs you need. Give i
 
 ### Completed Project
 [View completed project](https://codepen.io/sheri/full/qPNWej/)
+
+![project-img-preview2_ipadair2_gold_left](https://user-images.githubusercontent.com/1948858/30665415-31f36588-9e51-11e7-8fa3-5cfbfe972a39.png)
+![project-img-preview1_ipadair2_gold_portrait](https://user-images.githubusercontent.com/1948858/30665416-320d20fe-9e51-11e7-809c-e7f80cd29f34.png)
