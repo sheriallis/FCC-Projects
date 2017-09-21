@@ -1,6 +1,8 @@
 body {
   font-family: "Open Sans", sans-serif;
+  color: #222;
   margin: 0;
+  line-height: 1.5;
 }
 
 #container {
@@ -8,7 +10,6 @@ body {
   width: 100%;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -20,20 +21,12 @@ body {
 
 #search-area {
   min-height: 250px;
-  background-image: url("../assets/bg-small.jpg");
+  background-image: url("https://raw.githubusercontent.com/sheriallis/fcc-projects/master/front-end-certification/wikipedia-viewer/assets/bg-small.jpg");
   background-position: left;
   background-size: cover;
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  flex: 1;
-}
-
-h1 {
-  font-size: 2rem;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .search-input {
@@ -43,6 +36,7 @@ h1 {
   width: 250px;
   height: 30px;
   border: 4px solid #000;
+  margin-top: 24px;
   margin-bottom: 8px;
 }
 
@@ -74,10 +68,13 @@ footer>a:visited {
   border-bottom: 2px solid #bebebe;
 }
 
-h4 {
-  font-size: 1.2rem;
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  margin-top: 40px;
 }
 
 p {
   font-size: 1rem;
+  margin-bottom: 0;
 }
