@@ -42,6 +42,18 @@ body {
   margin-bottom: 8px;
 }
 
+input[type="submit"] {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  height: 30px;
+}
+
+input[type="submit"]:hover {
+  background-color: #8b84e1;
+}
+
 #search-area>a {
   color: #fff;
   text-decoration: none;
