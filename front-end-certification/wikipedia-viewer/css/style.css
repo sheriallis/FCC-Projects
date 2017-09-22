@@ -23,7 +23,7 @@ body {
 
 #search-area {
   min-height: 250px;
-  background-image: url("https://raw.githubusercontent.com/sheriallis/fcc-projects/master/front-end-certification/wikipedia-viewer/assets/bg-small.jpg");
+  background-image: url("../assets/bg-small.jpg");
   background-position: left;
   background-size: cover;
   display: flex;
