@@ -1,57 +1,84 @@
 body {
-  background-image: linear-gradient( to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f78ca0),
+    color-stop(19%, #f9748f),
+    color-stop(60%, #fd868c),
+    to(#fe9a8b)
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+  background-image: -o-linear-gradient(
+    left,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
   color: #3d3d3d;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
 }
-
 .wrapper {
   width: 480px;
   margin: 0 auto;
   background-color: #fff;
 }
-
 .weather-info {
   list-style: none;
   text-align: center;
   padding-left: 0;
 }
-
 .temp,
 .description {
   padding-bottom: 15px;
 }
-
 .weather-image {
   border-radius: 15px 15px 0 0;
 }
-
 .wrapper {
   border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
-
 .location {
   font-size: 1.5rem;
 }
-
 .temp {
   font-weight: 800;
   font-size: 5rem;
 }
-
 .description {
   font-size: 1.5rem;
   color: #606060;
 }
-
 .metric {
   color: #f78ca0;
 }
 
 .metric:hover {
-  color: #FFC13A;
-  border-bottom: 4px solid #FFC13A;
+  color: #ffc13a;
+  border-bottom: 4px solid #ffc13a;
 }
