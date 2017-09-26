@@ -12,6 +12,7 @@ body {
   display: flex;
   max-width: 1400px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .text-tile {
@@ -39,4 +40,18 @@ body {
   background-repeat: none;
   background-size: cover;
   background-position: center;
+}
+
+.text-tile-bio {
+  height: 20%;
+  background-color: #ffb75a;
+  color: #191919;
+  padding: 40px;
+}
+
+.img-tile.bio {
+  background-image: url("../img/bio-img.jpg");
+  background-repeat: none;
+  background-size: cover;
+  height: 500px;
 }
