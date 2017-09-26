@@ -1,1 +1,42 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: #f0f0f0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
 
+#container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.text-tile {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  background-color: #191919;
+  color: #f7f7f7;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.text-tile-content {
+  align-self: center;
+}
+
+.img-tile {
+  height: 500px;
+  flex: 2;
+}
+
+.img-tile.header {
+  background-image: url("../img/header-img.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
