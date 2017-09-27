@@ -10,14 +10,17 @@ body {
 }
 body {
   font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 #container {
   display: flex;
+  min-width: 440px;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 10px auto;
   flex-wrap: wrap;
+  border: 3px solid #f7f7f7;
 }
 
 .content-container {
@@ -80,5 +83,30 @@ li {
   height: 500px;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
+  flex: 1 0 50px;
+}
+
+@media (max-width: 1440px) {
+  #container {
+    border: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .img-tile.bio {
+    background-position: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .small,
+  .img-tile.header,
+  .img-tile.bio {
+    flex-basis: 100vw;
+    height: 20vh;
+  }
+
+  ul {
+    padding-left: 10px;
+  }
 }
