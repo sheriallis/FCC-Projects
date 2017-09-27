@@ -61,3 +61,11 @@ body {
 li {
   list-style: none;
 }
+
+.text-tile-quote {
+  text-align: center;
+  flex-basis: 100%;
+  color: #191919;
+  background-color: #ebebeb;
+  font-size: 2rem;
+}
