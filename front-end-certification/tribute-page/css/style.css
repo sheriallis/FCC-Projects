@@ -16,7 +16,7 @@ body {
   flex-wrap: wrap;
 }
 
-.text-tile {
+.text-tile-small {
   width: 500px;
   height: 500px;
   display: flex;
@@ -44,7 +44,8 @@ body {
   background-position: center;
 }
 
-.text-tile-bio {
+.text-tile-full-width {
+  flex-basis: 100%;
   height: 20%;
   background-color: #ffb75a;
   color: #191919;
