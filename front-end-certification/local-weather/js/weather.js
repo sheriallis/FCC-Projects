@@ -55,25 +55,25 @@ $(function() {
     setImage: function(condition) {
       if (condition <= 200 && condition < 300) {
         // storm
-        $(".weather-image").attr("src", "../assets/storm.jpg");
+        $(".weather-image").attr("src", "assets/storm.jpg");
       } else if (condition >= 300 && condition < 400) {
         // drizzle
-        $(".weather-image").attr("src", "../assets/drizzle.jpg");
+        $(".weather-image").attr("src", "assets/drizzle.jpg");
       } else if (condition >= 500 && condition < 600) {
         // rain
-        $(".weather-image").attr("src", "../assets/rain.jpg");
+        $(".weather-image").attr("src", "assets/rain.jpg");
       } else if (condition >= 600 && condition < 700) {
         // snow
-        $(".weather-image").attr("src", "../assets/snow.jpg");
+        $(".weather-image").attr("src", "assets/snow.jpg");
       } else if (condition >= 700 && condition < 800) {
         // atmosphere/fog
-        $(".weather-image").attr("src", "../assets/fog.jpg");
+        $(".weather-image").attr("src", "assets/fog.jpg");
       } else if (condition === 800) {
         // clear
-        $(".weather-image").attr("src", "../assets/clear.jpg");
+        $(".weather-image").attr("src", "assets/clear.jpg");
       } else if (condition > 800 && condition < 900) {
         // clouds
-        $(".weather-image").attr("src", "../assets/cloudy.jpg");
+        $(".weather-image").attr("src", "assets/cloudy.jpg");
       }
     }
   };
