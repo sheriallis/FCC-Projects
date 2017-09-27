@@ -69,3 +69,10 @@ li {
   background-color: #191919;
   color: #f7f7f7;
 }
+
+footer {
+  text-align: center;
+  flex-basis: 100%;
+  background-color: #191919;
+  color: #f7f7f7;
+}
