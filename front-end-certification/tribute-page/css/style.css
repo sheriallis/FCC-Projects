@@ -18,7 +18,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 440px;
   max-width: 1400px;
   margin: 10px auto;
   -ms-flex-wrap: wrap;
@@ -120,7 +119,7 @@ li {
   .img-tile.bio {
     -ms-flex-preferred-size: 100vw;
     flex-basis: 100vw;
-    height: 20vh;
+    height: 30vh;
   }
 
   ul {
