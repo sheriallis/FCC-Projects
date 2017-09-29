@@ -19,4 +19,4 @@ Fulfill the below user stories. Use whichever libraries or APIs you need. Give i
 ### Completed Project
 [View Completed Project](https://sheriallis.github.io/fcc-projects/front-end-certification/twitch-project/)
 
-![project preview](https://user-images.githubusercontent.com/1948858/31033780-ac99b334-a561-11e7-9576-3d49ef30c9f9.png)
+![project preview](https://user-images.githubusercontent.com/1948858/31034002-7d2414c2-a562-11e7-9d79-abab8adf0096.jpg)
