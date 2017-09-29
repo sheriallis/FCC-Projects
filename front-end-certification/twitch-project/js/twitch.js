@@ -61,7 +61,7 @@ $(function() {
   const displayData = function(logo, name, url, status, statusClass, desc) {
     $(".streamers-list").append(
       `
-      <div class="card bg-light m-3 " style="width: 20rem;">
+      <div class="card border-${statusClass} bg-light m-3 " style="width: 20rem;">
       <div class="card-header">${name}</div>
       <div class="card-body">
         <img class="user-image mb-3 mt-3 rounded-circle" src="${logo}">
