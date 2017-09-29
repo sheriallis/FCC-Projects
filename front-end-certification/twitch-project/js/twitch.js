@@ -4,17 +4,17 @@ $(function() {
     "Adam13531",
     "Noopkat",
     "rthor_",
+    "JessicaMak",
     "LiveOrDevTrying",
+    "kentcdodds",
     "RainbowWarrior_",
     "stonehearth",
     "DrunkDevs",
     "DonTheDeveloper",
     "jhovgaard",
     "tsoding",
-    "JessicaMak",
     "FrancoisCote_io",
     "XenocideAcademy",
-    "kentcdodds",
     "Jacklifear",
     "JoshStrobl"
   ];
@@ -38,7 +38,7 @@ $(function() {
       if (stream[0].stream !== null) {
         desc = "<strong>Streaming:</strong> " + channel[0].status;
         status = "online";
-        statusBadge = "badge-success";
+        statusBadge = "success";
       } else if (channel[0].status === 404) {
         name = "Channel Could Not Be Found";
         desc =
@@ -47,27 +47,29 @@ $(function() {
         logo =
           "https://raw.githubusercontent.com/sheriallis/twitch-api-project/master/img/placeholder_logo.png";
         url = "https://twitch.tv";
-        statusBadge = "badge-danger";
+        statusBadge = "danger";
       } else {
         status = "offline";
         desc = "This channel is currently offline.";
-        statusBadge = "badge-light";
+        statusBadge = "light";
       }
 
       displayData(logo, name, url, status, statusBadge, desc);
     });
   }
 
-  const displayData = function(logo, name, url, status, statusBadge, desc) {
+  const displayData = function(logo, name, url, status, statusClass, desc) {
     $(".streamers-list").append(
       `
-        <div class="col-md-4">
-          <h3>${name}</h3>
+      <div class="card bg-light m-3 " style="width: 20rem;">
+      <div class="card-header">${name}</div>
+      <div class="card-body">
         <img class="user-image mb-3 mt-3 rounded-circle" src="${logo}">
         <p>${desc}
         </p>
-        <p><a href="${url}" class="badge ${statusBadge}">${status}</a></p>
+        <p><a href="${url}" class="badge badge-${statusClass}">${status}</a></p>
       </div>
+    </div>
       `
     );
   };
