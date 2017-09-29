@@ -61,7 +61,7 @@ $(function() {
   const displayData = function(logo, name, url, status, statusClass, desc) {
     $(".streamers-list").append(
       `
-      <div class="card border-${statusClass} bg-light m-3 " style="width: 20rem;">
+      <div class="card border-${statusClass} bg-light m-3 ${status}" style="width: 20rem;">
       <div class="card-header">${name}</div>
       <div class="card-body">
         <img class="user-image mb-3 mt-3 rounded-circle" src="${logo}">
@@ -73,4 +73,26 @@ $(function() {
       `
     );
   };
+
+  $(".filter-online").click(function() {
+    $(".online").removeClass("d-none");
+    $(".all-streams").removeClass("active");
+    $(".filter-offline").removeClass("active");
+    $(this).addClass("active");
+    $(".offline").addClass("d-none");
+  });
+  $(".filter-offline").click(function() {
+    $(".offline").removeClass("d-none");
+    $(".all-streams").removeClass("active");
+    $(".filter-online").removeClass("active");
+    $(this).addClass("active");
+    $(".online").addClass("d-none");
+  });
+  $(".all-streams").click(function() {
+    $(".offline").removeClass("d-none");
+    $(".online").removeClass("d-none");
+    $(".filter-online").removeClass("active");
+    $(".filter-offline").removeClass("active");
+    $(this).addClass("active");
+  });
 });
