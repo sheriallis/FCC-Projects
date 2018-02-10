@@ -21,12 +21,10 @@ $(function() {
 
   for (let i = 0; i < streamers.length; i++) {
     let getChannel = $.getJSON(
-      "https://cors.now.sh/https://wind-bow.gomix.me/twitch-api/channels/" +
-        streamers[i]
+      "https://wind-bow.glitch.me/twitch-api/channels/" + streamers[i]
     );
     let getStream = $.getJSON(
-      "https://cors.now.sh/https://wind-bow.gomix.me/twitch-api/streams/" +
-        streamers[i]
+      "https://wind-bow.glitch.me/twitch-api/streams/" + streamers[i]
     );
 
     $.when(getChannel, getStream).done(function(channel, stream) {
