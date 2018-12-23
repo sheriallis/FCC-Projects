@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Product Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div id="logo">
+      <img src="assets/saxophone2.png" id="header-img">
+      <h1>SaxoClass</h1>
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a data-scroll href="#what-we-offer" class="nav-link">What We Offer</a></li>
+        <li><a data-scroll href="#lessons" class="nav-link">Lessons</a></li>
+        <li><a data-scroll href="#about" class="nav-link">About</a></li>
+        <!-- <li><a data-scroll href="#contact" class="nav-link">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <section id="hero">
+    <div id="newsletter">
+      <h2>Weekly Newsletter</h2>
+      <p>Sign up and get weekly saxophone lessons and tips
+          mailed to  you for free.</p>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+        <input type="submit" id="submit" class="btn">
+      </form>
+    </div>
+  </section>
+  <section id="what-we-offer">
+    <header class="section-title">What We Offer</header>
+    <div class="offer-item">
+      <img src="assets/saxophone.png">
+      <div class="desc">
+        <h4>Online Courses</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia augue quis odio tincidunt, quis iaculis lectus tristique. Etiam rutrum blandit iaculis. Quisque porttitor viverra mi.</p>
+      </div>
+    </div>
+    <div class="offer-item">
+      <img src="assets/saxophone2.png">
+      <div class="desc">
+        <h4>Workshops</h4>
+        <p>Phasellus tincidunt sem ac ligula suscipit pellentesque. Maecenas sollicitudin libero erat, et rhoncus odio auctor eget.</p>
+      </div>
+    </div>
+    <div class="offer-item">
+      <img src="assets/saxophone.png">
+      <div class="desc">
+        <h4>Store</h4>
+        <p>Donec imperdiet nec leo vitae congue. Maecenas non lorem tempor, porttitor ante accumsan, feugiat dolor. </p>
+      </div>
+    </div>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/5YNDxGeMoZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  <section id="lessons">
+    <header class="section-title">Lessons</header>
+    <div class="card-container">
+      <div class="card">
+        <header>Beginner</header>
+        <img src="assets/saxophone3.png">
+        <p>Mauris vel eros quis risus dignissim tempus vel sed tellus.</p>
+        <ul>
+          <li>Mauris sit amet dui massa. </li>
+          <li>Curabitur vel fringilla odio.</li>
+          <li>Suspendisse tempor diam quis.</li>
+        </ul>
+        <button class="btn add-to-cart">Add To Cart</button>
+      </div>
+      <div class="card">
+        <header>Intermediate</header>
+        <img src="assets/saxophone3.png">
+        <p>Mauris vel eros quis risus dignissim tempus vel sed tellus.</p>
+        <ul>
+          <li>Mauris sit amet dui massa. </li>
+          <li>Curabitur vel fringilla odio.</li>
+          <li>Suspendisse tempor diam quis.</li>
+        </ul>
+        <button class="btn add-to-cart">Add To Cart</button>
+      </div>
+      <div class="card">
+        <header>Advanced</header>
+        <img src="assets/saxophone3.png">
+        <p>Mauris vel eros quis risus dignissim tempus vel sed tellus.</p>
+        <ul>
+          <li>Mauris sit amet dui massa. </li>
+          <li>Curabitur vel fringilla odio.</li>
+          <li>Suspendisse tempor diam quis.</li>
+        </ul>
+        <button class="btn add-to-cart">Add To Cart</button>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <header class="section-title">About</header>
+    <p>In non risus at diam porttitor vestibulum at sed nisi. Nulla placerat imperdiet ex, non vulputate mi consectetur eu. Pellentesque non metus sed nulla vehicula porta a vitae ex. Mauris imperdiet arcu pulvinar ipsum aliquet, id varius mauris condimentum. Sed hendrerit auctor neque. Donec egestas tincidunt luctus. In lobortis sodales metus viverra pellentesque. Curabitur bibendum justo a nisi accumsan blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eu tortor eu odio gravida commodo. Suspendisse eu eros lectus. Quisque feugiat purus diam. Pellentesque vel mauris nisl.</p>
+  </section>
+  <footer>
+    <p>Icons made by Freepik from <a href="https://www.flaticon.com/search?word=saxophone">flaticon.com</a></p>
+  </footer>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script> -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
